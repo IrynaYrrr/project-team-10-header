@@ -1,0 +1,43 @@
+.categories {
+    height: 228px;
+    width: 335px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+    @media screen and (min-width: 768px) {
+        width: 337px;
+        height: 472px;
+        margin-right: 32px;
+        }
+    @media screen and (min-width: 768px) {
+        width: 356px;
+        margin-bottom: 86px;
+        }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        }
+
+    &__item {
+        font-style: normal;
+        font-weight: 400;
+        color: rgba(17, 17, 17, 0.6);
+        font-size: 16px;
+line-height: 1.125;
+@media screen and (min-width: 768px) {
+        font-size: 18px;
+            line-height: 1.333;
+    }
+    } 
+
+}
+
+.categories-is-active {
+    color: $blue-color;
+    text-transform: uppercase;
+    font-weight: 700;
+}

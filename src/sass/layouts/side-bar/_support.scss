@@ -1,0 +1,94 @@
+.support {
+    width: 335px;
+    height: 352px;
+    @media screen and (min-width: 768px) {
+        height: 472px;
+    }
+    @media screen and (min-width: 768px) {
+         width: 356px;
+        }
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px 40px 20px 40px;
+    background: radial-gradient(183.6% 183.01% at 59.76% -23.42%, #4f2ee8 18.03%, #fff 100%);
+    border-radius: 16px;
+    box-shadow: 0 10px 10px #f5f5f71a;
+
+        &__title-wrapper {
+            display: flex;
+            margin-bottom: 40px;
+        }
+        &__title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.14286;
+            color: $white-color;
+        }
+
+        &__icon {
+            margin-left: 12px;
+            fill: $white-color;
+        }
+        &__list-js {
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+        &__list-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            font-size: 14px;
+            line-height: 1.28571;
+            
+            color: $white-color;
+        }
+ 
+        &__logo {
+            height: 32px;
+            filter: grayscale(100%) invert(50%) brightness(200%);
+        }
+
+        &__button {
+            
+            padding: 6px;
+            background-color: $white-color;
+            border: none;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            margin: 16px auto 0;
+            display: flex;
+
+            @media screen and (min-width: 768px) {
+                padding: 8px;
+                }
+            
+        }
+
+        &__button-icon {
+            fill: #4f2ee8;
+            height: 20px;
+            width: 20px;
+            @media screen and (min-width: 768px) {
+                height: 22px;
+                width: 22px;
+                }
+        }
+    
+}
+.swiper {
+    height: 188px;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        height: 292px;
+    }
+}
+
+.swiper-wrapper {
+transition: transform 0.5s ease-out;
+}
