@@ -34,12 +34,14 @@
 
 
 
-let switchBtn = document.querySelector('.header__switch-btn');
-let switchOn = document.querySelector('.header__switch-on');
-let headerContainer = document.querySelector('.header__container');
-let logoLight = document.getElementById('header__icon-light');
-let headerLogo = document.querySelector('.header__logo');
-let burgerSvg = document.querySelector('.header__burderSvg-light');
+const switchBtn = document.querySelector('.header__switch-btn');
+const switchOn = document.querySelector('.header__switch-on');
+const headerContainer = document.querySelector('.header__container');
+const logoLight = document.getElementById('header__icon-light');
+const headerLogo = document.querySelector('.header__logo');
+const burgerSvg = document.querySelector('.header__svg-light');
+
+const burgerBtn = document.querySelector('.header__burder-btn');
 
 
 switchBtn.addEventListener('click', onSwitchClick);
@@ -56,11 +58,18 @@ function onSwitchClick() {
     burgerSvg.classList.remove('header__burderSvg-dark');
   }
 
-  if (headerLogo.innerHTML.includes('svg#icon-logo--dark')) {
+  if (headerLogo.innerHTML.includes('svg#icon-logo--dark')){
     headerLogo.innerHTML = headerLogo.innerHTML.replace('svg#icon-logo--dark', 'svg#icon-logo');
   }
   else {
     headerLogo.innerHTML = headerLogo.innerHTML.replace('svg#icon-logo', 'svg#icon-logo--dark');
   }
 
+}
+
+
+burgerBtn.addEventListener('click', onClickBurder);
+
+function onClickBurder(){
+  console.log('click burger');
 }

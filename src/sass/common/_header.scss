@@ -254,7 +254,7 @@
   height: 18px; /* высота кнопки */
   width: 20px; /* ширина кнопки */
   border-radius: 17px;
-  background: #fff; /* цвет кнопки */
+  background: $theme-switcher-linear-gradient; /* цвет кнопки */
   top: 1px; /* положение кнопки по вертикали относительно основы */
   left: 1px; /* положение кнопки по горизонтали относительно основы */
   transition-duration: 300ms; /* анимация */
