@@ -44,13 +44,6 @@ const burgerSvg = document.querySelector('.header__svg-light');
 const burgerBtn = document.querySelector('.header__burder-btn');
 const closeBtn = document.querySelector('.header__close-btn');
 
-const headerSighUp = document.querySelector('.header-sighUp');
-
-
-
-
-
-
 switchBtn.addEventListener('click', onSwitchClick);
 
 function onSwitchClick() {
