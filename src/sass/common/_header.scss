@@ -293,19 +293,23 @@
 }
 
 .sighUp-btn {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: $blue-color;
-  border-radius: 20px;
-  color: $white-color;
-  padding: 14px;
-  margin: 12px 24px;
-  border: none;
-  cursor: pointer;
-  width: 184px;
-  height: 45px;
-  font-size: 14px;
-  border: 1.5px solid #111111;
-  border-radius: 18px;
+  display: none;
+
+  @media screen and (min-width: 767px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $blue-color;
+    border-radius: 20px;
+    color: $white-color;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    width: 184px;
+    height: 45px;
+    font-size: 14px;
+    border: 1.5px solid #111111;
+    border-radius: 18px;
+    margin-right: -24px;
+  }
 }
