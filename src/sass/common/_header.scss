@@ -218,18 +218,15 @@
 }
 
 .header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
   min-width: 375px;
   height: 64px;
   border: 1.5px solid $dark-color;
   border-radius: 0 0 8px 8px;
   background: $primary-background-color;
-}
-
-.header__wrapper {
-  padding: 18px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header__toggle-menu {
@@ -273,6 +270,10 @@
 .header__menu button {
   border: none;
   background: transparent;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 
 .header__dark-theme {
@@ -289,4 +290,22 @@
 
 .header__switch-on::after {
   left: 20px;
+}
+
+.sighUp-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $blue-color;
+  border-radius: 20px;
+  color: $white-color;
+  padding: 14px;
+  margin: 12px 24px;
+  border: none;
+  cursor: pointer;
+  width: 184px;
+  height: 45px;
+  font-size: 14px;
+  border: 1.5px solid #111111;
+  border-radius: 18px;
 }
