@@ -42,6 +42,8 @@ const headerLogo = document.querySelector('.header__logo');
 const burgerSvg = document.querySelector('.header__svg-light');
 
 const burgerBtn = document.querySelector('.header__burder-btn');
+const closeBtn = document.querySelector('.header__close-btn');
+
 
 
 switchBtn.addEventListener('click', onSwitchClick);
@@ -71,5 +73,14 @@ function onSwitchClick() {
 burgerBtn.addEventListener('click', onClickBurder);
 
 function onClickBurder(){
-  console.log('click burger');
+  closeBtn.style.display = "inline";
+  burgerBtn.style.display = "none";
+}
+
+
+closeBtn.addEventListener('click', onClickClose);
+
+function onClickClose(){
+  closeBtn.style.display = "none";
+  burgerBtn.style.display = "inline";
 }
