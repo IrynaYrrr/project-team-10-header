@@ -54,10 +54,13 @@ function onSwitchClick() {
     this.classList.add('header__switch-on');
     headerContainer.classList.add('header__dark-theme');
     burgerSvg.classList.add('header__burderSvg-dark');
+    closeBtn.classList.add('header__closeSvg-dark');
   } else {
     this.classList.remove('header__switch-on');
     headerContainer.classList.remove('header__dark-theme');
     burgerSvg.classList.remove('header__burderSvg-dark');
+    closeBtn.classList.remove('header__closeSvg-dark');
+
   }
 
   if (headerLogo.innerHTML.includes('svg#icon-logo--dark')){
