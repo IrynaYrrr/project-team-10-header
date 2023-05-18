@@ -217,6 +217,14 @@
   display: none;
 }
 
+.header-nav-list {
+  display: none;
+
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -312,4 +320,36 @@
     border-radius: 18px;
     margin-right: -24px;
   }
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  padding: 8px 16px;
+  color: $dark-color;
+}
+
+.header-shopping {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 36px;
+  background-color: $yellow-color;
+}
+
+.header-home {
+  border-radius: 36px;
+  background-color: $yellow-color;
+}
+
+.header-home {
+  border-radius: 36px;
+  background-color: $yellow-color;
 }
