@@ -40,9 +40,20 @@ const headerContainer = document.querySelector('.header__container');
 const logoLight = document.getElementById('header__icon-light');
 const headerLogo = document.querySelector('.header__logo');
 const burgerSvg = document.querySelector('.header__svg-light');
+const headerLink = document.querySelector('.header__link');
+
 
 const burgerBtn = document.querySelector('.header__burder-btn');
 const closeBtn = document.querySelector('.header__close-btn');
+
+
+if(window.location.pathname === "/index.html") {
+  document.querySelector('.header-home').classList.add('header-active');
+  document.querySelector('.header-shopping').classList.remove('header-active');
+} else if(window.location.pathname === "/shopping-list.html") {
+  document.querySelector('.header-shopping').classList.add('header-active');
+  document.querySelector('.header-home').classList.remove('header-active');
+}
 
 switchBtn.addEventListener('click', onSwitchClick);
 
@@ -53,12 +64,12 @@ function onSwitchClick() {
     headerContainer.classList.add('header__dark-theme');
     burgerSvg.classList.add('header__burderSvg-dark');
     closeBtn.classList.add('header__closeSvg-dark');
+    headerLink.classList.add('header__link-light');
   } else {
     this.classList.remove('header__switch-on');
     headerContainer.classList.remove('header__dark-theme');
     burgerSvg.classList.remove('header__burderSvg-dark');
     closeBtn.classList.remove('header__closeSvg-dark');
-
   }
 
   if (headerLogo.innerHTML.includes('svg#icon-logo--dark')){

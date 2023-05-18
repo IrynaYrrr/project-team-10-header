@@ -223,6 +223,10 @@
   @media screen and (min-width: 767px) {
     display: block;
   }
+  @media screen and (min-width: 1439px) {
+  position: absolute;
+  left: 160px;
+  }
 }
 
 .header__container {
@@ -296,6 +300,14 @@
   fill: $primary-background-color;
 }
 
+.header__link-light {
+  color:  $dark-color;
+}
+
+.header__link-light{
+  color:  $primary-background-color;
+}
+
 .header__switch-on::after {
   left: 20px;
 }
@@ -334,22 +346,34 @@
   line-height: 1.29;
   padding: 8px 16px;
   color: $dark-color;
-}
-
-.header-shopping {
+  border-radius: 36px;
   display: flex;
   align-items: center;
   gap: 8px;
-  border-radius: 36px;
-  background-color: $yellow-color;
 }
 
-.header-home {
+a.header-home.header-active {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+  width: 72px;
+  height: 34px;
+  background: $yellow-color;
   border-radius: 36px;
-  background-color: $yellow-color;
 }
 
-.header-home {
+a.header-shopping.header-active {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 16px;
+  gap: 8px;
+  width: 156px;
+  height: 34px;
+  background: $yellow-color;
   border-radius: 36px;
-  background-color: $yellow-color;
 }
