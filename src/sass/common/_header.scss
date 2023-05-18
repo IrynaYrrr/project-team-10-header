@@ -222,10 +222,8 @@
 
   @media screen and (min-width: 767px) {
     display: block;
-  }
-  @media screen and (min-width: 1439px) {
-  position: absolute;
-  left: 160px;
+    position: absolute;
+    left: 160px;
   }
 }
 
@@ -301,11 +299,7 @@
 }
 
 .header__link-light {
-  color:  $dark-color;
-}
-
-.header__link-light{
-  color:  $primary-background-color;
+  color:  white;
 }
 
 .header__switch-on::after {
